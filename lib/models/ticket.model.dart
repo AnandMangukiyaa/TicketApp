@@ -40,11 +40,11 @@ class Ticket{
 
   Ticket copyWith({
     String? id,
-    String? problemTitle,
-    String? problemDescription,
-    String? location,
-    String? storedImage,
-    String? createdAt,
+    String? problemTitle ="",
+    String? problemDescription="",
+    String? location="",
+    String? storedImage="",
+    String? createdAt="",
   }) {
     return Ticket(
       id: id ?? this.id,
@@ -58,12 +58,12 @@ class Ticket{
 
   Map<String, dynamic> toMap() {
     return {
-      'id': this.id,
-      'problemTitle': this.problemTitle,
-      'problemDescription': this.problemDescription,
-      'location': this.location,
-      'storedImage': this.storedImage,
-      'createdAt': this.createdAt,
+      'id': id,
+      'problemTitle': problemTitle,
+      'problemDescription': problemDescription,
+      'location': location,
+      'storedImage': storedImage,
+      'createdAt': createdAt,
     };
   }
 

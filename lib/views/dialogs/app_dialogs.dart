@@ -2,10 +2,7 @@ import 'dart:io';
 
 import 'package:flutter_ticket/core/constants/constants.dart';
 import 'package:flutter_ticket/core/utils/utils.dart';
-import 'package:flutter_ticket/models/models.dart';
-import 'package:flutter_ticket/services/services.dart';
 import 'package:flutter_ticket/views/widgets/widgets.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 

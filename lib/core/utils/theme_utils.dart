@@ -7,7 +7,6 @@ class ThemeUtils {
     return ThemeData(
       primaryColor: AppColors.primary,
       hintColor: AppColors.darkGrey.withOpacity(0.5),
-      backgroundColor: AppColors.backgroundColor,
       scaffoldBackgroundColor: AppColors.backgroundColor,
       fontFamily: AppFontFamily.poppins,
       splashColor: Colors.white.withOpacity(0.1),
@@ -24,10 +23,9 @@ class ThemeUtils {
         centerTitle: true,
         titleTextStyle: TextStyle(color: Colors.white,fontSize: 22,fontWeight: FontWeight.w600),
         systemOverlayStyle: SystemUiOverlayStyle.dark,
-      ),
-      colorScheme: ColorScheme.fromSwatch(
+      ), colorScheme: ColorScheme.fromSwatch(
               primarySwatch: generateMaterialColor(AppColors.primary))
-          .copyWith(secondary: AppColors.secondary),
+          .copyWith(secondary: AppColors.secondary).copyWith(background: AppColors.backgroundColor),
     );
   }
 }

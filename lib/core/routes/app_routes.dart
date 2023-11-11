@@ -1,6 +1,4 @@
-import 'dart:io';
 
-import 'package:flutter_ticket/main.dart';
 import 'package:flutter_ticket/views/pages/pages.dart';
 import 'package:flutter/material.dart';
 
